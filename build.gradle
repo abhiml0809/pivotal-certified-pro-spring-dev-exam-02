@@ -16,6 +16,8 @@ subprojects {
         maven { url "https://repo.spring.io/snapshot/" }
         maven { url "https://repo.spring.io/milestone" }
         maven { url "https://plugins.gradle.org/m2/" }
+        maven { url "https://plugins.gradle.org/m2/" }
+        maven { url "https://maven.ceon.pl/artifactory/repo/" }
     }
 }
 
@@ -51,7 +53,7 @@ ext {
 
     // db
     hibernateVersion = '5.4.3.Final'
-    ojdbcVersion = '12.1.0.2'
+    ojdbcVersion = '19.3.0.0'
     hikariVersion = '3.3.1'
 
     //in memory test database
@@ -159,7 +161,7 @@ ext {
             javaxValidation  : "javax.validation:validation-api:2.0.1.Final",
             javaxPersistence : "org.eclipse.persistence:javax.persistence:2.2.1",
             lang3            : "org.apache.commons:commons-lang3:$lang3Version",
-            ojdbc            : "com.oracle:ojdbc7:$ojdbcVersion",
+            ojdbc            : "com.oracle.ojdbc:ojdbc8:$ojdbcVersion",
             slf4j            : "org.slf4j:slf4j-api:$slf4jVersion",
             logback          : "ch.qos.logback:logback-classic:$logbackVersion",
             aspectjweaver    : "org.aspectj:aspectjweaver:$aspectjVersion",
